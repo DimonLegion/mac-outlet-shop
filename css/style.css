@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,regular,700);
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.logo-pic {
+    width: 120px;
+}
+
+.main {}
+
+.section-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: url(../img/banners/ipad_air_banner.jpg) no-repeat center;
+    background-size: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 32px;
+}
+
+.section-slider-title {
+    margin-bottom: 40px;
+    padding-top: 181px;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-slider-btn {}
+
+.btn {
+    max-width: 150px;
+    width: 100%;
+    height: 50px;
+    background-color: #0E49B5;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.section-products {}
+
+.section-products-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 23px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #DDDADA;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.section-products-nav-loupe {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/search.svg) no-repeat;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.section-products-nav-input {
+    border: 0;
+    height: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+    width: 90%;
+}
+
+.section-products-nav-buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.section-products-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0E49B5;
+    margin-right: 13px;
+}
+
+.section-products-nav-btn:last-child {
+    margin-right: 0;
+}
+
+.section-products-nav-btn-pic {
+    width: 25px;
+    height: 25px;
+}
+
+.container-element-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.card-head {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.card-img-head {
+    margin-top: 15px;
+}
+
+.card-like-head {
+    margin: 17px 17px 0 12px;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0 0;
+    text-align: center;
+    color: #000000;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body-img {
+    margin: 12px 8px;
+}
+
+.card-body-text {
+    text-align: left;
+}
+
+.card-btn {
+    text-align: center;
+}
+
+.btnNA {
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.btnNA a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.card-footer {
+    background-color: #DAE2EA;
+    display: flex;
+    padding: 23px 19px 18px;
+    margin-top: 15px;
+}
+
+.card-footer-body {
+    margin-right: 55px;
+}
+
+.icon-footer-like {
+    margin-right: 13px;
+}
+
+.card-footer-footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.card-footer-body p,
+.card-footer p,
+.card-body p {
+    margin: 12px 0;
+}
+
+
+/*responsive*/
+
+@media (max-width:950px) {
+    .container-element-card {
+        justify-content: center;
+    }
+    .card {
+        margin: 0 50px 50px;
+    }
+}
+
+@media (max-width:830px) {
+    .card {
+        margin: 0 25px 50px;
+    }
+}
+
+@media (max-width:730px) {
+    .card {
+        margin: 0 15px 50px;
+    }
+}
